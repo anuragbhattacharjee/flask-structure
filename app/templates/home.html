@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>NLU Micro Service</title>
+    <meta name="author" content="Anurag Bhattacharjee" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles/jquery.funnyText.css') }}"
+    />
+    <style>
+      .text1,
+      .text2,
+      .text3 {
+        display: block;
+        text-align: center;
+      }
+      body {
+        font-family: arial;
+      }
+
+      .text3 span {
+        background-color: #dfe2db;
+      }
+      .text3 span.active {
+        background-color: #3b3738;
+      }
+
+      /* Web design
+		* --------------------------------------- */
+      .table {
+        display: table;
+        width: 100%;
+        height: 100%;
+      }
+      .tableCell {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+      }
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: #00aeef;
+        /* background-image: url(imgs/grain.png); */
+      }
+    </style>
+
+    <!--[if IE]>
+      <script type="text/javascript">
+        var console = { log: function() {} };
+      </script>
+    <![endif]-->
+
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-ui.min.js') }}"></script>
+
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/jquery.funnyText.js') }}"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".text1").funnyText({
+          speed: 700,
+          activeColor: "#fff",
+          color: "black",
+          fontSize: "8em"
+        });
+
+        $(".text2").funnyText({
+          speed: 700,
+          fontSize: "5em",
+          color: "#191919",
+          activeColor: "#fff",
+          borderColor: "white"
+        });
+
+        $(".text3").funnyText({
+          speed: 700,
+          fontSize: "7em",
+          color: "#191919",
+          activeColor: "#fff",
+          borderColor: "black"
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="table">
+      <div class="tableCell">
+        <div class="text1">Anurag</div>
+        <div class="text2">Is</div>
+        <div class="text3">Awesome</div>
+      </div>
+    </div>
+  </body>
+</html>

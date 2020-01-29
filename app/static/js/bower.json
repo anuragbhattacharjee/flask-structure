@@ -1,0 +1,13 @@
+{
+  "name": "funnyText.js",
+  "homepage": "https://github.com/anuragbhattacharjee",
+  "authors": ["Anurag Bhattacharjee https://github.com/anuragbhattacharjee"],
+  "description": "Create funny and crazy moving texts in a simple way.",
+  "main": ["jquery.funnyText.min.js", "jquery.funnyText.css"],
+  "keywords": ["website", "template", "funny", "text", "javascript"],
+  "license": "MIT",
+  "ignore": ["**/.*", "node_modules", "bower_components"],
+  "dependencies": {
+    "jquery": "1.11.1"
+  }
+}
