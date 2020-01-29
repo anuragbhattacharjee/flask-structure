@@ -18,20 +18,24 @@ FLASK is a micro framework. But you can do bg projects on FLASK. The flexibility
 
 # If environment varibales aren't set in your machine you can do any of the following:
   1. Set Env varibales:
-      For Mac/Linux:
+
+    For Mac/Linux:
         export FLASK_ENV=development
         export FLASK_DEBUG=1
-      For windows:
+    For windows:
         set FLASK_ENV=development
         set FLASK_DEBUG=1 
+        
   2. By using python-dotenv ( recommended )
-          i. pip install python-dotenv
-         ii. create a .flaskenv file in your project
-        iii. in .flaskenv:
-                FLASK_ENV=development
-                FLASK_DEBUG=1
+  
+    >  pip install python-dotenv
+     create a .flaskenv file in your project
+     in .flaskenv add these lines:
+        FLASK_ENV=development
+        FLASK_DEBUG=1
   Check if environement variables are set properly:
       For Linux:
+      
         printenv FLASK_ENV
         printenv FLASK_DEBUG
  
