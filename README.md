@@ -7,8 +7,12 @@ FLASK is a micro framework. But you can do bg projects on FLASK. The flexibility
 1. git clone https://github.com/anuragbhattacharjee/flask-structure.git
 2. python3 -m venv {your-app-name}-venv
 3. source {your-app-name}-venv/bin/activate
-4. pip install requirements.txt
+4. pip install -r requirements.txt
 5. flask run
+
+# To update requirements.txt: 
+    pip freeze > requirements.txt
+    More info: https://pip.pypa.io/en/stable/reference/pip_freeze/
 
 
 # If environment varibales aren't set in your machine you can do any of the following:
