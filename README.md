@@ -11,8 +11,9 @@ FLASK is a micro framework. But you can do bg projects on FLASK. The flexibility
 5. flask run
 
 # To update requirements.txt: 
-    pip freeze > requirements.txt
-    More info: https://pip.pypa.io/en/stable/reference/pip_freeze/
+   pip freeze > requirements.txt
+    
+   More info: https://pip.pypa.io/en/stable/reference/pip_freeze/
 
 
 # If environment varibales aren't set in your machine you can do any of the following:
@@ -38,21 +39,21 @@ FLASK is a micro framework. But you can do bg projects on FLASK. The flexibility
 # .gitignore
 I have added all the to .gitignore so that the repository don't get bloated. It's a standard practice. Please add all these to your .gitignore:
 
-{your-app-name}-venv
+    {your-app-name}-venv
 
-__pycache__
+    __pycache__
 
-.flaskenv
+    .flaskenv
 
-*.log
+    *.log
 
-*.pot
+    *.pot
 
-*.pyc
+    *.pyc
 
-*/*/*/__pycache__/
+    */*/*/__pycache__/
 
-*/*/__pycache__/
+    */*/__pycache__/
 
-*/__pycache__/
+    */__pycache__/
 
